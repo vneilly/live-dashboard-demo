@@ -1,0 +1,27 @@
+node_modules/
+dist/
+.DS_Store
+.env
+.vscode/
+.vite
+
+# Build directories
+build/
+coverage/
+
+# Temporary files
+tmp/
+temp/
+
+# System files
+Thumbs.db
+*.bak
+
+# IDE specific files
+.idea/
+
+# Logs
+logs/
+*.log
+
+# Dependency directories
