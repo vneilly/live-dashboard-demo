@@ -1,16 +1,19 @@
 import { Outlet } from "react-router-dom";
+import Sidebar from "../components/layout/Sidebar";
+import Header from "../components/layout/Header";
 
 const Layout = () => {
   return (
-    <div className="flex flex-col h-screen">
+    <div className="flex min-h-screen">
       {/* Sidebar */}
-      <aside className="w-64 bg-gray-100 p-4">
-        <h2 className="text-xl font-bold">Sidebar</h2>
-      </aside>
-      {/* Main content */}
-      <main className="flex-1 p-6">
-        <Outlet />
-      </main>
+      <Sidebar />
+      <div className="flex-1 flex flex-col">
+        <Header />
+        {/* Main content */}
+        <main className="flex-1 p-4 bg-gray-50">
+          <Outlet />
+        </main>
+      </div>
     </div>
   );
 };
